@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d5a47;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2b4d3d;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cta-buttons a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.login {
+    background-color: #455d50;
+}
+
+.get-started {
+    background-color: #fff;
+    color: #2b4d3d;
+}
+
+/* Support Section */
+.support-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+    color: #fff;
+}
+
+.support-content {
+    width: 60%;
+}
+
+.support-content h2 {
+    font-size: 28px;
+    color: #ff6161;
+    margin-bottom: 30px;
+}
+
+.support-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.support-box {
+    background-color: #fff;
+    color: #2d5a47;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.support-box .icon {
+    font-size: 40px;
+    color: #ff6161;
+}
+
+.support-box h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.support-box p {
+    font-size: 16px;
+}
+
+/* Emergency Help Section */
+.emergency-help {
+    width: 30%;
+    background-color: #fff;
+    color: #2d5a47;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.emergency-help h3 {
+    color: #0066ff;
+}
+
+.emergency-help h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.emergency-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.emergency-list li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.emergency-number {
+    font-weight: bold;
+    color: #ff6161;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    background-color: #2b4d3d;
+    text-align: center;
+}
+
+footer .chat-icon {
+    font-size: 30px;
+    color: #2d5a47;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+}

@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2d5a47;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2b4d3d;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.cta-buttons a {
+    margin-left: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.login {
+    background-color: #455d50;
+}
+
+.get-started {
+    background-color: #fff;
+    color: #2b4d3d;
+}
+
+/* Therapy Matching Section */
+.matching-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #2d5a47;
+    color: #fff;
+}
+
+.matching-section h2 {
+    font-size: 28px;
+    color: #ff6161;
+    margin-bottom: 10px;
+}
+
+.matching-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.therapy-options {
+    background-color: #fff;
+    color: #2d5a47;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.therapy-options p {
+    color: #2d5a47;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.therapy-option {
+    display: block;
+    background-color: #8fd0a8;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.therapy-option:hover {
+    background-color: #76b88e;
+}
+
+.info-box {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #e0edf0;
+    color: #2d5a47;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 16px;
+    max-width: 600px;
+}
