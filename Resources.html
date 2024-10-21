@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We4U - Mental Health Resources</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f3e6e6;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #345b4e;
+            padding: 20px;
+        }
+
+        header .logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px;
+        }
+
+        .hero-content h1 {
+            font-size: 2em;
+            color: #333;
+        }
+
+        .read-more {
+            padding: 10px 20px;
+            background-color: #6ab06a;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .resources {
+            padding: 50px;
+        }
+
+        .category {
+            margin-bottom: 50px;
+        }
+
+        .category h2 {
+            font-size: 1.5em;
+            margin-bottom: 20px;
+        }
+
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .article img {
+            width: 100%;
+            height: auto;
+        }
+
+        article p {
+            margin-top: 10px;
+        }
+
+        aside {
+            background-color: #fff;
+            padding: 20px;
+            width: 300px;
+        }
+
+        .search-bar {
+            display: flex;
+            margin-bottom: 30px;
+        }
+
+        .search-bar input {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        .search-bar button {
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .support-cta {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .support-cta img {
+            width: 100%;
+            height: auto;
+        }
+
+        .get-started {
+            background-color: #6ab06a;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .categories-list ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .categories-list ul li {
+            margin-bottom: 10px;
+        }
+
+        .email-signup input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .email-signup .sign-up {
+            background-color: #345b4e;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #345b4e;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/we4u-high-resolution-logo-removebg-preview 1.png" alt="We4U Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Articles & Advice</a></li>
+                <li><a href="Support.html">Support</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Learn how to choose between a psychologist and a therapist.</h1>
+            <button class="read-more">Read More</button>
+        </div>
+        <div class="hero-image">
+            <img src="images/hero-image.jpg" alt="Hero Image">
+        </div>
+    </section>
+
+    <!-- Resource Categories Section -->
+    <section class="resources">
+        <div class="category">
+            <h2>Depression</h2>
+            <div class="articles-grid">
+                <div class="article">
+                    <img src="images/pexels-pixabay-236151.jpg" alt="Article 1">
+                    <p>Understanding and Managing Relocation Depression</p>
+                </div>
+                <div class="article">
+                    <img src="images/pexels-lucasmendesph-3094435.jpg" alt="Article 2">
+                    <p>Depression During Pregnancy: Signs, Symptoms, and Treatments</p>
+                </div>
+                <!-- Add more articles as necessary -->
+            </div>
+        </div>
+        <div class="category">
+            <h2>Anxiety</h2>
+            <div class="articles-grid">
+                <div class="article">
+                    <img src="images/pexels-mastercowley-2413552.jpg" alt="Article 1">
+                    <p>Why Am I So Depressed After Working Out?</p>
+                </div>
+                <div class="article">
+                    <img src="images/pexels-polina-kovaleva-8709087.jpg" alt="Article 2">
+                    <p>How Do People with Autism Spectrum Disorder Experience Depression?</p>
+                </div>
+            </div>
+        </div>
+        <!-- Add more categories as necessary -->
+    </section>
+
+    <!-- Sidebar Section -->
+    <aside>
+        <div class="search-bar">
+            <input type="text" placeholder="Search">
+            <button><img src="images/magnifying-glass.png" alt="Search"></button>
+        </div>
+        <div class="support-cta">
+            <img src="images/support-image.jpg" alt="Support">
+            <button class="get-started">Get Started</button>
+        </div>
+        <div class="categories-list">
+            <h3>Top Categories</h3>
+            <ul>
+                <li><a href="#">General</a></li>
+                <li><a href="#">Therapy</a></li>
+                <li><a href="#">Relationships and Relations</a></li>
+                <li><a href="#">Depression</a></li>
+                <li><a href="#">Current Events</a></li>
+            </ul>
+        </div>
+        <div class="email-signup">
+            <h3>Helpful resources delivered to your inbox</h3>
+            <input type="email" placeholder="Email">
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </aside>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 We4U. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Example JavaScript functionality
+
+        // Alert on 'Read More' button click
+        document.querySelector('.read-more').addEventListener('click', function () {
+            alert('Read more about choosing between a psychologist and a therapist.');
+        });
+
+        // Smooth scrolling for category links
+        document.querySelectorAll('.categories-list a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetSection = document.querySelector(this.getAttribute('href'));
+                if (targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Example of email sign-up button click functionality
+        document.querySelector('.sign-up').addEventListener('click', function () {
+            const emailInput = document.querySelector('.email-signup input');
+            if (emailInput.value) {
+                alert('Thank you for signing up!');
+            } else {
+                alert('Please enter a valid email address.');
+            }
+        });
+
+    </script>
+</body>
+
+</html>
