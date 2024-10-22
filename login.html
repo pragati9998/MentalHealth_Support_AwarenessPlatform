@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        .input-container {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .social-btn {
+            display: inline-block;
+            width: 48%;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            text-align: center;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .google-btn {
+            background-color: #dd4b39;
+            color: white;
+        }
+
+        .facebook-btn {
+            background-color: #3b5998;
+            color: white;
+        }
+
+        .other-btn {
+            background-color: #333;
+            color: white;
+        }
+
+        .error-message {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .signup-link {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+
+        .signup-link a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .signup-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return validateForm()">
+            <div class="input-container">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-container">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+            <div class="error-message" id="errorMessage"></div>
+        </form>
+
+        <div class="social-login">
+            <div class="social-btn google-btn" onclick="loginWithGoogle()">Google</div>
+            <div class="social-btn facebook-btn" onclick="loginWithFacebook()">Facebook</div>
+        </div>
+
+
+        <div class="signup-link">
+            Don't have an account? <a href="#" onclick="signUp()">Sign up here</a>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            const username = document.getElementById('username').value;
+            const password = document.getElementById('password').value;
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (username === '' || password === '') {
+                errorMessage.textContent = 'Please fill in both fields';
+                return false;
+            }
+
+            // Simulate authentication
+            if (username === 'admin' && password === 'admin') {
+                alert('Login successful');
+                return true;
+            } else {
+                errorMessage.textContent = 'Invalid username or password';
+                return false;
+            }
+        }
+
+        function loginWithGoogle() {
+            alert('Login with Google');
+            // Simulate login with Google
+        }
+
+        function loginWithFacebook() {
+            alert('Login with Facebook');
+            // Simulate login with Facebook
+        }
+
+
+
+        function signUp() {
+            alert('Redirect to Sign Up page');
+            // Simulate redirection to the sign-up page
+        }
+    </script>
+</body>
+
+</html>

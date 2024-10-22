@@ -52,6 +52,11 @@
             color: #333;
         }
 
+        .hero-image img {
+            width: 400px;
+            height: auto;
+        }
+
         .read-more {
             padding: 10px 20px;
             background-color: #6ab06a;
@@ -59,6 +64,10 @@
             color: white;
             cursor: pointer;
             margin-top: 10px;
+        }
+
+        .read-more:hover {
+            background-color: #345b4e;
         }
 
         .resources {
@@ -89,27 +98,51 @@
             margin-top: 10px;
         }
 
+        /* Main content and sidebar flex layout */
+        .main-content {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .resources {
+            flex-grow: 1;
+        }
+
         aside {
             background-color: #fff;
             padding: 20px;
             width: 300px;
+            flex-basis: 300px;
         }
 
+        /* Search bar fix */
         .search-bar {
             display: flex;
             margin-bottom: 30px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
 
         .search-bar input {
             flex-grow: 1;
             padding: 10px;
-            border: 1px solid #ccc;
+            border: none;
+            border-radius: 5px 0 0 5px;
+            outline: none;
         }
 
         .search-bar button {
             background-color: transparent;
             border: none;
+            padding: 5px;
             cursor: pointer;
+        }
+
+        .search-bar button img {
+            width: 20px;
+            /* Adjust the size of the search icon */
+            height: 20px;
         }
 
         .support-cta {
@@ -145,6 +178,8 @@
             margin-bottom: 10px;
         }
 
+
+
         .email-signup .sign-up {
             background-color: #345b4e;
             color: white;
@@ -166,12 +201,12 @@
     <!-- Header -->
     <header>
         <div class="logo">
-            <img src="images/we4u-high-resolution-logo-removebg-preview 1.png" alt="We4U Logo" class="logo">
+            <img src="images/we4u-high-resolution-logo-removebg-preview 1.png" alt="We4U Logo">
         </div>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">Articles & Advice</a></li>
+                <li><a href="Resources.html">Articles & Advice</a></li>
                 <li><a href="Support.html">Support</a></li>
             </ul>
         </nav>
@@ -184,68 +219,69 @@
             <button class="read-more">Read More</button>
         </div>
         <div class="hero-image">
-            <img src="images/hero-image.jpg" alt="Hero Image">
+            <img src="images/pexels-cottonbro-4098368.jpg" alt="Mental health professional consultation">
         </div>
     </section>
 
-    <!-- Resource Categories Section -->
-    <section class="resources">
-        <div class="category">
-            <h2>Depression</h2>
-            <div class="articles-grid">
-                <div class="article">
-                    <img src="images/pexels-pixabay-236151.jpg" alt="Article 1">
-                    <p>Understanding and Managing Relocation Depression</p>
-                </div>
-                <div class="article">
-                    <img src="images/pexels-lucasmendesph-3094435.jpg" alt="Article 2">
-                    <p>Depression During Pregnancy: Signs, Symptoms, and Treatments</p>
-                </div>
-                <!-- Add more articles as necessary -->
-            </div>
-        </div>
-        <div class="category">
-            <h2>Anxiety</h2>
-            <div class="articles-grid">
-                <div class="article">
-                    <img src="images/pexels-mastercowley-2413552.jpg" alt="Article 1">
-                    <p>Why Am I So Depressed After Working Out?</p>
-                </div>
-                <div class="article">
-                    <img src="images/pexels-polina-kovaleva-8709087.jpg" alt="Article 2">
-                    <p>How Do People with Autism Spectrum Disorder Experience Depression?</p>
+    <!-- Main Content with Sidebar -->
+    <div class="main-content">
+        <!-- Resource Categories Section -->
+        <section class="resources">
+            <div class="category" id="Depression">
+                <h2>Depression</h2>
+                <div class="articles-grid">
+                    <div class="article">
+                        <img src="images/pexels-pixabay-236151.jpg" alt="Relocation Depression Article">
+                        <p>Understanding and Managing Relocation Depression</p>
+                    </div>
+                    <div class="article">
+                        <img src="images/pexels-lucasmendesph-3094435.jpg" alt="Pregnancy Depression Article">
+                        <p>Depression During Pregnancy: Signs, Symptoms, and Treatments</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Add more categories as necessary -->
-    </section>
+            <div class="category" id="Anxiety">
+                <h2>Anxiety</h2>
+                <div class="articles-grid">
+                    <div class="article">
+                        <img src="images/pexels-mastercowley-2413552.jpg" alt="Exercise Depression Article">
+                        <p>Why Am I So Depressed After Working Out?</p>
+                    </div>
+                    <div class="article">
+                        <img src="images/pexels-polina-kovaleva-8709087.jpg" alt="Autism and Depression Article">
+                        <p>How Do People with Autism Spectrum Disorder Experience Depression?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <!-- Sidebar Section -->
-    <aside>
-        <div class="search-bar">
-            <input type="text" placeholder="Search">
-            <button><img src="images/magnifying-glass.png" alt="Search"></button>
-        </div>
-        <div class="support-cta">
-            <img src="images/support-image.jpg" alt="Support">
-            <button class="get-started">Get Started</button>
-        </div>
-        <div class="categories-list">
-            <h3>Top Categories</h3>
-            <ul>
-                <li><a href="#">General</a></li>
-                <li><a href="#">Therapy</a></li>
-                <li><a href="#">Relationships and Relations</a></li>
-                <li><a href="#">Depression</a></li>
-                <li><a href="#">Current Events</a></li>
-            </ul>
-        </div>
-        <div class="email-signup">
-            <h3>Helpful resources delivered to your inbox</h3>
-            <input type="email" placeholder="Email">
-            <button class="sign-up">Sign Up</button>
-        </div>
-    </aside>
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="search-bar">
+                <input type="text" placeholder="Search mental health resources">
+                <button><img src="images/magnifying-glass.png" alt="Search"></button>
+            </div>
+            <div class="support-cta">
+                <img src="images/pexels-diohasbi-3280130.jpg" alt="Support resources">
+                <button class="get-started">Get Started</button>
+            </div>
+            <div class="categories-list">
+                <h3>Top Categories</h3>
+                <ul>
+                    <li><a href="#Depression">Depression</a></li>
+                    <li><a href="#Anxiety">Anxiety</a></li>
+                    <li><a href="#">Therapy</a></li>
+                    <li><a href="#">Relationships</a></li>
+                    <li><a href="#">Current Events</a></li>
+                </ul>
+            </div>
+            <div class="email-signup">
+                <h3>Helpful resources delivered to your inbox</h3>
+                <input type="email" placeholder="Email">
+                <button class="sign-up">Sign Up</button>
+            </div>
+        </aside>
+    </div>
 
     <!-- Footer -->
     <footer>
@@ -253,14 +289,12 @@
     </footer>
 
     <script>
-        // Example JavaScript functionality
-
-        // Alert on 'Read More' button click
+        // 'Read More' button click alert
         document.querySelector('.read-more').addEventListener('click', function () {
             alert('Read more about choosing between a psychologist and a therapist.');
         });
 
-        // Smooth scrolling for category links
+        // Smooth scrolling for sidebar links
         document.querySelectorAll('.categories-list a').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
                 e.preventDefault();
@@ -271,7 +305,7 @@
             });
         });
 
-        // Example of email sign-up button click functionality
+        // Email sign-up button functionality
         document.querySelector('.sign-up').addEventListener('click', function () {
             const emailInput = document.querySelector('.email-signup input');
             if (emailInput.value) {
@@ -280,7 +314,6 @@
                 alert('Please enter a valid email address.');
             }
         });
-
     </script>
 </body>
 

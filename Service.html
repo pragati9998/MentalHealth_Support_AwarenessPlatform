@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We4U - Services</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #345b4e;
+            padding: 20px;
+        }
+
+        header .logo img {
+            width: 100px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+            position: relative;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .header-buttons button {
+            margin-left: 10px;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .header-buttons .login {
+            background-color: #1c3b34;
+            color: white;
+        }
+
+        .header-buttons .get-started {
+            background-color: white;
+            color: #1c3b34;
+        }
+
+        /* Dropdown Menu */
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown .dropbtn {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: white;
+            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: #333;
+            padding: 12px 16px;
+            display: block;
+            text-decoration: none;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+
+        /* Services Section */
+        .services {
+            background-color: #ddd;
+            padding: 50px;
+        }
+
+        .services-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .services-content .service-info h2 {
+            font-size: 2em;
+            color: #345b4e;
+        }
+
+        .service-image img {
+            width: 100%;
+            height: auto;
+        }
+
+        .service-links {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+        }
+
+        .service-links .therapy,
+        .service-links .medications,
+        .service-links .treatment {
+            width: 30%;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .service-links h3,
+        .service-links h4 {
+            color: #345b4e;
+            margin-bottom: 10px;
+        }
+
+        .service-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .service-links ul li {
+            margin-bottom: 10px;
+        }
+
+        .service-links ul li a {
+            text-decoration: none;
+            color: #345b4e;
+        }
+
+        .service-links ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <img src="images/we4u-high-resolution-logo-removebg-preview 1.png" alt="We4U Logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Services</a>
+                    <div class="dropdown-content">
+                        <a href="#">Therapy</a>
+                        <a href="#">Medications</a>
+                        <a href="#">Treatment</a>
+                    </div>
+                </li>
+                <li><a href="counselling.html">Counselling</a></li>
+                <li><a href="Support.html">Support</a></li>
+            </ul>
+            <div class="header-buttons">
+
+                <button class="get-started">Get Started</button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="services-content">
+            <div class="service-info">
+                <h2>Services</h2>
+                <p>Get Access to therapy, medication management, and personalized treatment.</p>
+            </div>
+
+        </div>
+        <div class="service-links">
+            <div class="therapy">
+                <h3>Therapy</h3>
+                <ul>
+                    <li><a href="#">Individual therapy</a></li>
+                    <li><a href="#">Couples therapy</a></li>
+                    <li><a href="#">LGBTQIA+ therapy</a></li>
+                    <li><a href="#">Therapy for veterans</a></li>
+                    <li><a href="#">Teen therapy</a></li>
+                </ul>
+            </div>
+            <div class="medications">
+                <h3>Medications</h3>
+                <p>Psychiatry and medication management</p>
+                <h4>Common medications prescribed</h4>
+                <ul>
+                    <li>Abilify (Aripiprazole)</li>
+                    <li>Buspar (Buspirone)</li>
+                    <li>Cymbalta (Duloxetine)</li>
+                    <li>Lexapro (Escitalopram)</li>
+                    <li>Lithium</li>
+                    <li>Propranolol</li>
+                    <li>Prozac (Fluoxetine)</li>
+                    <li>Trazodone</li>
+                    <li>Zoloft (Sertraline)</li>
+                </ul>
+            </div>
+            <div class="treatment">
+                <h3>Get treatment for</h3>
+                <ul>
+                    <li><a href="#">Depression</a></li>
+                    <li><a href="#">Anxiety</a></li>
+                    <li><a href="#">Bipolar disorder</a></li>
+                    <li><a href="#">OCD</a></li>
+                    <li><a href="#">PTSD</a></li>
+                    <li><a href="#">Post-partum depression</a></li>
+                    <li><a href="#">Panic disorder</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Dropdown functionality
+        document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+            dropdown.addEventListener('mouseover', function () {
+                this.querySelector('.dropdown-content').style.display = 'block';
+            });
+            dropdown.addEventListener('mouseout', function () {
+                this.querySelector('.dropdown-content').style.display = 'none';
+            });
+        });
+    </script>
+</body>
+
+</html>
